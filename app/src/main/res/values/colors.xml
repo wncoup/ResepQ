@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F8D418</color>
+    <color name="colorPrimaryDark">#1e1e1e</color>
+    <color name="colorAccent">#1e1e1e</color>
+    <color name="background">#1e1e1e</color>
+    
+    <!--  Color AlertDialog builder (Ubah | Hapus) -->
+    <color name="crud">#1e1e1e</color>
+</resources>

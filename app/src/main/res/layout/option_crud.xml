@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/boder_layout_option_crud">
+
+        <Button
+            android:id="@+id/btn_optionUbah"
+            android:layout_width="250dp"
+            android:fontFamily="@font/bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="1dp"
+            android:background="@drawable/border_button"
+            android:clickable="true"
+            android:text="Ubah Resep"/>
+
+        <Button
+            android:id="@+id/btn_optionHapus"
+            android:layout_width="250dp"
+            android:elevation="1dp"
+            android:fontFamily="@font/bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_button"
+            android:clickable="true"
+            android:text="Hapus Resep"/>
+
+
+</LinearLayout>

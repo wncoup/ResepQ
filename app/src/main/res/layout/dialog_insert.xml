@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialogEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Tambah Resep Baru"
+            android:textSize="18sp"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorAccent"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/iv_imgLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_photo_black_24dp"/>
+            <ImageView
+                android:id="@+id/iv_imgItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/border"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/et_judulResep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:fontFamily="@font/regular"
+            android:hint="Judul Resep"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/et_deskripsiResep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/regular"
+            android:hint="Deskripsi Bahan"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/et_caraResep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="Cara Membuat Resep"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/bold"
+                android:text="Batal"/>
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/border_button"
+                android:elevation="1dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/bold"
+                android:text="Tambah" />
+
+            <Button
+                android:id="@+id/btnUbah"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:elevation="1dp"
+                android:fontFamily="@font/bold"
+                android:background="@drawable/border_button"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Ubah" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
